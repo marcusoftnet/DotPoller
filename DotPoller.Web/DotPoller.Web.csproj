@@ -89,6 +89,8 @@
     <Compile Include="Models\AThingWithTags.cs" />
     <Compile Include="Models\Poll.cs" />
     <Compile Include="Models\PollAnswer.cs" />
+    <Compile Include="Models\ReportParameters.cs" />
+    <Compile Include="Modules\AnswerReportModule.cs" />
     <Compile Include="Modules\GetAddPollModule.cs" />
     <Compile Include="Modules\GetPollModule.cs" />
     <Compile Include="Modules\HomeModule.cs" />
@@ -101,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\Poll.cshtml" />
+    <Content Include="Views\Report.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\AddPoll.cshtml" />

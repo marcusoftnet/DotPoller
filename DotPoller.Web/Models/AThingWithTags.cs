@@ -13,7 +13,7 @@ namespace DotPoller.Web.Models
         {
             get
             {
-                if (_tags == null)
+                if (_tags == null && !string.IsNullOrEmpty(TagString))
                 {
                     _tags = TagString.Split(SPLIT_CHARS, StringSplitOptions.RemoveEmptyEntries);
                 }

@@ -12,5 +12,15 @@
 	    <input type="text" id="mood" name="mood" /><br />
         <input type="submit" value="Post your answer" />
     </form>
+    <hr />
+    <form action="/poll/@Model.Id/report" method="post">
+        <label for="dateFrom">Date from:</label>
+        <input type="text" id="dateFrom" name="dateFrom" value="@DateTime.Now.AddDays(-30).ToShortDateString()" /><br />
+        <label for="dateTo">Date to:</label>
+        <input type="text" id="dateTo" name="dateTo" value="@DateTime.Now.ToShortDateString()" /><br />
+        <label for="tags">Tags to filter:</label>
+        <input type="text" id="tags" name="tags" value="tag1 tag2 tag3" /><br />
+        <input type="submit" value="View report" />
+    </form>
 </body>
 </html>
