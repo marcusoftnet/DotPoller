@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="/poll/@Model.Id/answer" method="post">
+	    <input type="hidden" id="pollId" name="pollId" value="@Model.Id" /><br />
+	    <label for="tagstring">Tags:</label><br/>
+	    <input type="text" id="tagstring" name="tagstring" value="@Model.TagString" /><br/>
+	    <label for="mood">The question is:<strong>@Model.Question</strong></label><br/>
+	    <input type="text" id="mood" name="mood" /><br />
+        <input type="submit" value="Post your answer" />
+    </form>
+</body>
+</html>
